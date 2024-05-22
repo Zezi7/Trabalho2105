@@ -32,13 +32,13 @@
                                 while($linha = mysqli_fetch_assoc($resultado)){
                                     $id = $linha['id'];
                                     $nome = $linha['nome'];
-                                    $desc = $linha['descricao'];
                                     $valor = $linha['valor'];
+                                    $desc = $linha['descricao'];
                                     echo "<tr>
                                     <td> $id </td>
                                     <td> $nome </td>
-                                    <td> $desc </td>
                                     <td> $valor </td>
+                                    <td> $desc </td>
                                         </tr>";
                                 }
                             }
