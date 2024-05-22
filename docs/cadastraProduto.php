@@ -4,8 +4,8 @@
     $nome = $_POST['nome'];
     $valor = $_POST['valor'];
     $desc = $_POST['descricao'];
-    if(empty($nome)){
-        echo "<p>Campo nome deve ser preenchido </p>";
+    if(empty($nome) or empty($valor) or empty($desc)){
+        echo "<p>Os Campos devem ser preenchidos </p>";
     }else{
         $sql = "INSERT INTO produto(nome, valor, descricao) VALUES 
                                         ('$nome','$valor', '$desc')";
